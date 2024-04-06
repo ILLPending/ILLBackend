@@ -15,3 +15,5 @@ unsafe_code = "forbid"
 anyhow = "1.0.81"
 axum = { version = "0.7.5", features = ["macros"] }
 tokio = { version = "1.37.0", features = ["rt-multi-thread", "macros", "net"] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+ill-backend-api = { path = "../ill-backend-api" }
