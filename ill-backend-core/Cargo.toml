@@ -1,0 +1,17 @@
+[package]
+name = "ill-backend-core"
+version = "0.1.0"
+edition = "2021"
+
+[lints.clippy]
+pedantic = "deny"
+unwrap_used = "deny"
+missing_errors_doc = "allow"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[dependencies]
+anyhow = "1.0.81"
+axum = { version = "0.7.5", features = ["macros"] }
+tokio = { version = "1.37.0", features = ["rt-multi-thread", "macros", "net"] }
