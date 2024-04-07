@@ -1,9 +1,8 @@
 use async_trait::async_trait;
 use ill_backend_domain::user::{repo::UserRepo, User, UserCreate};
 
-
 pub struct ILLUserRepo {
-    db: sqlx::PgPool
+    db: sqlx::PgPool,
 }
 
 impl ILLUserRepo {
@@ -66,7 +65,7 @@ impl UserRepo for ILLUserRepo {
 
         Ok(user)
     }
-    
+
     async fn delete(&self, id: uuid::Uuid) -> anyhow::Result<()> {
         sqlx::query!(
             r#"

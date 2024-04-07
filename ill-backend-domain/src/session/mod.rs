@@ -8,12 +8,12 @@ pub struct Session {
     pub user_id: uuid::Uuid,
     pub token: String,
     pub expires_at: time::OffsetDateTime,
-    pub created_at: time::OffsetDateTime
+    pub created_at: time::OffsetDateTime,
 }
 
 #[derive(Serialize)]
 pub struct SessionCreate {
     pub user_id: uuid::Uuid,
     pub token: String,
-    pub expires_at: time::OffsetDateTime
+    pub expires_at: time::OffsetDateTime,
 }

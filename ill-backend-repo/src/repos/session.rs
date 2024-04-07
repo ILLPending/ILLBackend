@@ -1,10 +1,8 @@
 use async_trait::async_trait;
 use ill_backend_domain::session::{repo::SessionRepo, Session, SessionCreate};
 
-
-
 pub struct ILLSessionRepo {
-    db: sqlx::PgPool
+    db: sqlx::PgPool,
 }
 
 impl ILLSessionRepo {

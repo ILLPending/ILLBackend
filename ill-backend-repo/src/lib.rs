@@ -1,2 +1,2 @@
-pub mod repos;
 pub mod manager;
+pub mod repos;
