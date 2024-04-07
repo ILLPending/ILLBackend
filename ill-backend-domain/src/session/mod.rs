@@ -7,7 +7,8 @@ pub struct Session {
     pub id: uuid::Uuid,
     pub user_id: uuid::Uuid,
     pub token: String,
-    pub expires_at: time::OffsetDateTime
+    pub expires_at: time::OffsetDateTime,
+    pub created_at: time::OffsetDateTime
 }
 
 #[derive(Serialize)]
