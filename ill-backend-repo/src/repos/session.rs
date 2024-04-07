@@ -7,6 +7,13 @@ pub struct ILLSessionRepo {
     db: sqlx::PgPool
 }
 
+impl ILLSessionRepo {
+    #[must_use]
+    pub fn new(db: sqlx::PgPool) -> Self {
+        Self { db }
+    }
+}
+
 #[async_trait]
 impl SessionRepo for ILLSessionRepo {
     async fn create(&self, session: SessionCreate) -> anyhow::Result<Session> {

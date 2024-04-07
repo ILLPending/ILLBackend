@@ -6,6 +6,13 @@ pub struct ILLUserRepo {
     db: sqlx::PgPool
 }
 
+impl ILLUserRepo {
+    #[must_use]
+    pub fn new(db: sqlx::PgPool) -> Self {
+        Self { db }
+    }
+}
+
 #[async_trait]
 impl UserRepo for ILLUserRepo {
     async fn create(&self, data: &UserCreate) -> anyhow::Result<User> {

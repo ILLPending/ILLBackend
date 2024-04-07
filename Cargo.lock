@@ -664,6 +664,7 @@ name = "ill-backend-api"
 version = "0.1.0"
 dependencies = [
  "axum",
+ "ill-backend-repo",
  "tokio",
  "tracing",
 ]

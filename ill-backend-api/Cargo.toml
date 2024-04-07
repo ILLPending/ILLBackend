@@ -16,3 +16,4 @@ unsafe_code = "forbid"
 axum = { version = "0.7.5", features = ["macros"] }
 tokio = { version = "1.37.0", features = ["rt-multi-thread", "macros"] }
 tracing = { version = "0.1.40", features = ["log"] }
+ill-backend-repo = { path = "../ill-backend-repo" }
