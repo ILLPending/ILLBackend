@@ -1,0 +1,20 @@
+[package]
+name = "ill-backend-domain"
+version = "0.1.0"
+edition = "2021"
+
+[lints.clippy]
+pedantic = "deny"
+unwrap_used = "deny"
+missing_errors_doc = "allow"
+module_name_repetitions = "allow"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[dependencies]
+anyhow = "1.0.81"
+async-trait = "0.1.79"
+serde = { version = "1.0.197", features = ["derive"] }
+time = { version = "0.3.34", features = ["serde"] }
+uuid = { version = "1.8.0", features = ["v4", "fast-rng", "serde"] }

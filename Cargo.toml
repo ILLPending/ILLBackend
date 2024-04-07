@@ -6,7 +6,9 @@ edition = "2021"
 [workspace]
 members = [
     "ill-backend-core",
-    "ill-backend-api"
+    "ill-backend-api",
+    "ill-backend-domain",
+    "ill-backend-repo"
 ]
 
 [lints.clippy]
